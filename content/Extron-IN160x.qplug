@@ -760,7 +760,9 @@ if Controls then
     function fnSend(cmd)
         -- Send to device
         print("-->Extron::" .. cmd)
-        conn:Write(cmd)
+        if conn.IsConnected then
+            conn:Write(cmd)
+        end
         -- Reset Polling
         fnInitPoll(true)
     end
