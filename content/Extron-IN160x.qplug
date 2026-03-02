@@ -3,9 +3,9 @@
 -- For source, contact https://soloworks.co.uk
 
 PluginInfo = {
-    Name = "Extron~Scaling Presentation Switcher (0.0.0.3)", -- The tilde here indicates folder structure in the Shematic Elements pane
-    Version = "0.0.0.3",
-    Id = "qsysc.extron.in160x.0.0.0.3", -- show this is just a unique id. Show some commented out 'fun' unique ids
+    Name = "Extron~Scaling Presentation Switcher (0.0.0.4)", -- The tilde here indicates folder structure in the Shematic Elements pane
+    Version = "0.0.0.4",
+    Id = "qsysc.extron.in160x.0.0.0.4", -- show this is just a unique id. Show some commented out 'fun' unique ids
     Description = "Control for Extron IN160x series scaling presentation switchers",
     ShowDebug = true,
     Author = "Solo Works London"
