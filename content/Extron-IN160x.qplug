@@ -545,7 +545,7 @@ function GetControlLayout(props)
         Size = {3 * btn_size[1], btn_size[2]}
     }
     layout["av_mute"] = {
-        PrettyName = "Switcher~Video Mute",
+        PrettyName = "Switcher~AV Mute",
         Style = "Button",
         Legend = "Mute",
         Color = Colors.Red,
@@ -567,7 +567,7 @@ function GetControlLayout(props)
         Size = btn_size
     }
     layout["audio_mute"] = {
-        PrettyName = "Switcher~Video Mute",
+        PrettyName = "Switcher~Audio Mute",
         Style = "Button",
         Legend = "Mute",
         Color = Colors.Red,
@@ -787,7 +787,7 @@ if Controls then
             Controls["input_select_video_" .. i].Boolean = false
             Controls["input_select_audio_" .. i].Boolean = false
         end
-        if inp ~= "0" then
+        if inp ~= "0" and inp~=0 then
             Controls["input_select_" .. inp].Boolean = true
             Controls["input_select_video_" .. inp].Boolean = true
             Controls["input_select_audio_" .. inp].Boolean = true
@@ -801,7 +801,7 @@ if Controls then
             Controls["input_select_" .. i].Boolean = false
             Controls["input_select_video_" .. i].Boolean = false
         end
-        if inp ~= "0" then
+        if inp ~= "0" and inp~=0 then
             Controls["input_select_video_" .. inp].Boolean = true
         end
     end
@@ -813,7 +813,7 @@ if Controls then
             Controls["input_select_" .. i].Boolean = false
             Controls["input_select_audio_" .. i].Boolean = false
         end
-        if inp ~= "0" then
+        if inp ~= "0" and inp~=0 then
             Controls["input_select_audio_" .. inp].Boolean = true
         end
     end
