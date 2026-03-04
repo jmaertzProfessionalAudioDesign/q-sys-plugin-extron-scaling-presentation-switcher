@@ -275,7 +275,7 @@ end
 function GetControlLayout(props)
     local layout = {}
 
-    input_count = string.match(props["Model"].Value, "IN160(%d)")
+    input_count = string.match(props["Model"].Value, "IN1%d0(%d)")
 
     local title_size = {500, 32}
     local btn_size = {32, 24}
